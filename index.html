@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi - My Crush</title>
+</head>
+<body>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            padding-top: 30px;
+            position: relative;
+            min-height: 100vh;
+            background-color: pink;
+        }
+        h2{
+            font-family: sans-serif;
+            text-align: center;
+            margin: 16px 0px;
+        }
+        span{
+            color: red;
+        }
+
+        .img-cr{
+            text-align: center;
+        }
+
+        img{
+            text-align: center;
+            width:30%;
+            margin: 0 a
+        }
+
+        a{
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: greenyellow;
+            padding: 8px 16px;
+            font-size: 25px;
+            font-family: sans-serif;
+            border-radius: 5px;
+            color: white;
+        }
+
+        a:hover{
+            cursor: pointer;
+            opacity: 0.6;
+        }
+
+        .accept{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+
+        @keyframes tele{
+            from{
+                transform: translate(0,0);
+            }
+
+            to {
+                transform: translate(40%,-100px);
+            }
+        }
+
+        button{
+            padding: 8px 8px;
+          margin-left: 20px;
+          background-color: red;
+          color: white;
+          border-radius: 5px;
+          font-size: 25px;
+          text-transform: uppercase;
+          border: none;
+        }
+
+        #not{
+            position: absolute;
+        }
+
+        
+
+
+    </style>
+    <div class="main">
+        <h2>Bà dà<span> Xinh,Cute </span> Lắm</h1>
+        <div class="img-cr">
+
+            <img src="img.gif" alt="">
+        </div>
+        <h2>ĐỒNG Ý CHO <span> ÔNG DÀ </span>TÌM HIỂU BÀ DÀ NHA</h1>
+            <div class="accept">
+                <a href="accept.html">Em đồng ý</a>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <div class="cancel">
+
+                <button id="not">Không</button>
+            </div>
+    </div>
+
+    <script>
+        $('button').on('mouseover',function(){
+            $(this).animate({
+                'top':Math.random() * window.innerHeight + "px",
+                'right':Math.random() * window.innerWidth + "px",
+            }, "medium")
+        });
+    </script>
+
+</body>
+</html>
